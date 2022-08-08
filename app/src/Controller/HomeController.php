@@ -13,10 +13,4 @@ class HomeController extends AbstractController
 
         return $this->render('home/index.html.twig');
     }
-
-
-    #[Route(path:'/overview', name:'app_home_overview')]
-    public function overview(): Response {
-        return $this->render('home/overview.html.twig');
-    }
 }
